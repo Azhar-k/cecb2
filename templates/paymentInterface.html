@@ -4,6 +4,15 @@
 	<title>Payment</title>
 </head>
 <body>
-	<h1>"Insert coin"</h1>
+	<h1>Choose Your Payment Method</h1>
+	<p>Pay rs {{p1}}</p>
+	<div id="payment-container">
+		 <form id="popupForm"> 
+		 	<input type="text" name="amount">
+		 	<input type="submit" name="">
+		 </form>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="{{ url_for('static', filename='payment.js')}}"></script>
 </body>
 </html>
